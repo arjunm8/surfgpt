@@ -1,0 +1,61 @@
+.header {
+  background-color: #000;
+  color: white;
+}
+
+.summary-container {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.summary-container ul {
+  list-style: disc outside;
+  margin-left: 20px;
+}
+
+.summary-container ol {
+  list-style: decimal outside;
+  margin-left: 20px;
+}
+
+.summary-container ul ul, .summary-container ol ol {
+  list-style: circle outside;
+  margin-left: 20px;
+}
+
+.summary-container ul ol, .summary-container ol ul {
+  list-style: lower-alpha outside;
+  margin-left: 20px;
+}
+
+.summary-container ul ul ul, .summary-container ol ul ul, .summary-container ul ol ul, .summary-container ol ol ul {
+  list-style: square outside;
+  margin-left: 20px;
+}
+
+.summary-container ul ul ol, .summary-container ol ul ol, .summary-container ul ol ol, .summary-container ol ol ol {
+  list-style: lower-roman outside;
+  margin-left: 20px;
+}
+
+.summary-container li {
+  margin-bottom: 10px;
+}
+
+
+
+#summarize-button {
+  background-color: #000;
+  color: white;
+}
+
+#summarize-button:hover {
+  background-color: #333;
+}

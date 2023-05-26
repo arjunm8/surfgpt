@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SurfGPT Options</title>
+    <link rel="stylesheet" type="text/css" href="options.css">
+    <link rel="stylesheet" type="text/css" href="all.css">
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h1>SurfGPT Options</h1>
+      <br>
+      <form>
+        <div class="form-group">
+          <label for="maxParts">Enter maximum scannable sections:</label>
+          <div class="input-group">
+            <i class="fa fa-magnifying-glass"></i>
+            <input type="number" id="maxParts" name="maxParts" min="1" max="10" placeholder="Enter a digit between 1 to 10...">
+          </div>
+          <br>
+          What's this? - Chatgpt can only process+generate about 4k tokens (ie. ~3k words, or 1 "Section") at a time.<br>This setting defines what's the MAX number of Sections you want to scan in a page (useful for very long pages, but slower responses and higher costs).
+        </div>
+        <!--
+        <div class="form-group">
+          <label for="licenseKey">Enter your SurfGPT license key:</label>
+          <div class="input-group">
+            <i class="fa fa-key"></i>
+            <input type="text" id="licenseKey" name="licenseKey" placeholder="Enter your SurfGPT License key...">
+          </div>
+          <br>
+          Don't have one? <a target="blank" href="https://arjyn.gumroad.com/l/surfgpt">Click here to purchase your lifetime license</a> from Gumroad.
+          <br>
+          <br>
+          Purchased but didn't receive a key? email me at <a href="mailto:arjynae@gmail.com">arjynae@gmail.com<a>.
+          <br>
+        </div>-->
+        <div class="form-group">
+          <label for="apiKey">Enter your OpenAI API key:</label>
+          <div class="input-group">
+            <i class="fa fa-key"></i>
+            <input type="text" id="apiKey" name="apiKey" placeholder="Enter your API key...">
+          </div>
+          <br>
+          <p>Not sure where to get it? Follow these steps to generate your OpenAI API key:</p>
+          <br>
+          <ol style="padding-left:20px">
+            <li>Sign up for an account at <a target="_blank" href="https://platform.openai.com/signup">https://platform.openai.com/signup</a>.</li>
+            <li>Verify your email address and log in to your OpenAI account.</li>
+            <li>Generate your API key on the <a target="_blank" href="https://platform.openai.com/account/api-keys">API keys Page</a>.</li>
+            <li>Your first $18 of API usage is free for upto 3 months, after which you'll need to add a credit card to continue using the API.</li>
+            <li>You can check your OpenAI usage and manage billing details on the <a target="_blank" href="https://platform.openai.com/account/billing/overview">Usage Page</a>.</li>
+          </ol>
+        </div>
+        <button type="submit" class="submit-button">Save</button>
+        <br>
+        <p>Something wrong? Confirm if you're on the <a target="_blank" href="https://chrome.google.com/webstore/detail/surfgpt-contextual-chatgp/hfcjiddbkafhefceljaickkkoblbmibd">latest version</a> and contact me at: <a href="mailto:<email@domain.com>">email@domain.com<a>.</p>
+        <br>
+      </form>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

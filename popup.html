@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SurfGPT</title>
+    <link rel="stylesheet" type="text/css" href="generic.css">
+    <link rel="stylesheet" type="text/css" href="summary.css">
+    <link rel="stylesheet" type="text/css" href="qa.css">
+  </head>
+  <body>
+    <div class="container" style="display:none">
+      <div class="header">
+        <h1>SurfGPT</h1>
+        <div class="tab-container">
+          <button class="tablinks active" id="summary-tab-button">Summarize</button>
+          <button class="tablinks" id="qa-tab-button">Ask a Question</button>
+        </div>
+      </div>
+      <div id="summary-tab" class="tabcontent active">
+        <div class="content">
+          <div class="summary-container">
+            <div id="summary">
+              Your summary will load up here...
+            </div>
+          </div>
+          <button id="summarize-button">Summarize</button>
+          <div id="loader"></div>
+        </div>
+      </div>
+      <div id="qa-tab" class="tabcontent" style="display:none">
+        <div class="content">
+          <div class="form-group">
+            <label for="question-input">What's your question?</label>
+            <div class="input-wrapper">
+              <input type="text" id="question-input" name="question-input" placeholder="Ask anything about the page...">
+
+              <button id="qa-button">Submit</button>
+            </div>
+          </div>
+
+          <div class="qa-container">
+            <div id="qa-summary">
+              Your answer will load up here...
+            </div>
+          </div>
+          <div id="qa-loader"></div>
+        </div>
+      </div>
+    </div>
+    <div id="unActivatedContainer" style="display:none">
+      <div class="header">
+        <h1>SurfGPT</h1>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+    <script src="marked.min.js"></script>
+  </body>
+</html>

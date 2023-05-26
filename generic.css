@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px;
+}
+
+.tab-container {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+
+button {
+  margin-top: 20px;
+  align-self: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Add styles for tab links */
+.tablinks {
+  background-color: #f2f2f2;
+  border: none;
+  color: #666;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  transition: background-color 0.2s;
+}
+
+
+/* Style active tab */
+.tablinks.active {
+  background-color: #fff;
+  color: #333;
+  border-bottom: 3px solid #1E90FF;
+}
+
+/* Add styles for tab content */
+.tabcontent {
+  display: block;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Show active tab content */
+.tabcontent.show {
+  display: block;
+}
+
+
+.dot {
+  vertical-align: middle;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background-color: #ccc;
+  animation: loading-spinner 1s infinite ease-in-out;
+}
+
+#loader {
+  text-align: center;
+  font-size: 10px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  margin:10px auto;
+}
+
+.loading-spinner div {
+  width: 15%;
+  height: 15%;
+  background-color: #000;
+  border-radius: 100%;
+  display: inline-block;
+  animation: loading-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.loading-spinner div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.loading-spinner div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.loading-spinner div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.license-fail {
+  background-color: #ffe7e7;
+  border: 1px solid #fbbcbc;
+  color: #c80000;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 400px;
+}
+
+.license-fail a {
+  color: #c80000;
+  text-decoration: underline;
+}
+
+.license-warn {
+  background-color: #fff8e1;
+  border: 1px solid #ffe082;
+  color: #ffa000;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 400px;
+}
+
+.license-warn a {
+  color: #ffa000;
+  text-decoration: underline;
+}
+
+.license-missing {
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  color: #2e7d32;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  width: 400px;
+}
+
+.license-missing a {
+  color: #2e7d32;
+  text-decoration: underline;
+}
+
+.license-error-container{
+  display: flex;
+}
+
+.unActivatedContainer {
+  display: flex;
+  flex-direction: column;
+}

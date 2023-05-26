@@ -1,0 +1,97 @@
+.qa-container {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.form-group input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  height: 40px; /* set a fixed height to match the button */
+}
+
+#qa-button {
+  margin-top: 0px;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  height: 40px; /* set a fixed height to match the input */
+}
+
+.qa-container ul {
+  list-style: disc outside;
+  margin-left: 20px;
+}
+
+.qa-container ol {
+  list-style: decimal outside;
+  margin-left: 20px;
+}
+
+.qa-container ul ul, .qa-container ol ol {
+  list-style: circle outside;
+  margin-left: 20px;
+}
+
+.qa-container ul ol, .qa-container ol ul {
+  list-style: lower-alpha outside;
+  margin-left: 20px;
+}
+
+.qa-container ul ul ul, .qa-container ol ul ul, .qa-container ul ol ul, .qa-container ol ol ul {
+  list-style: square outside;
+  margin-left: 20px;
+}
+
+.qa-container ul ul ol, .qa-container ol ul ol, .qa-container ul ol ol, .qa-container ol ol ol {
+  list-style: lower-roman outside;
+  margin-left: 20px;
+}
+
+.qa-container li {
+  margin-bottom: 10px;
+}
+
+#qa-button:hover {
+  background-color: #333;
+}
+
+#question-input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+/* New modifications */
+
+.qa-container {
+  margin-top: 20px;
+}
