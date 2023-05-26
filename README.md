@@ -25,3 +25,5 @@ Watch the demo linked above to see Surfgpt in action.
 4. Click on the **Load unpacked** button and select the Surfgpt directory.
 
 5. The extension will now be loaded and ready to use in your local development environment.
+
+6. Right click on the extension icon and select **options** to configure your OpenAI API key.
